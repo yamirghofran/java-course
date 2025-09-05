@@ -17,6 +17,10 @@ public class Gravity {
 
 		double position = 0.5 * a * t * t + vi * t + xi;
 
+		if (position < 0) {
+			position = 0;
+		}
+
 		System.out.println("Position x(t) = " + position);
 
 		scanner.close();
